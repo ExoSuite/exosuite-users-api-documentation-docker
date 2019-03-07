@@ -4,5 +4,11 @@ services:
   exosuite-users-api-documentation:
     build:
       context: .
-    ports:
-      - "4242:80"
+    networks:
+      - documentation:
+          ipv4_address: 172.42.0.2
+networks:
+  documentation:
+    ipam:
+      config:
+        - subnet: 172.42.0.0/24
