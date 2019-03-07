@@ -2,6 +2,7 @@ version: "3"
 
 services:
   exosuite-users-api-documentation:
+    restart: always
     build:
       context: .
     networks:
