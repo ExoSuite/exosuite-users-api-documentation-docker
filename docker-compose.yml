@@ -5,7 +5,7 @@ services:
     build:
       context: .
     networks:
-      - documentation:
+      documentation:
           ipv4_address: 172.42.0.2
 networks:
   documentation:
